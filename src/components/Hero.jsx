@@ -1,5 +1,6 @@
 export default function Hero() {
   return (
+     <section id="hero">
     <div className="relative min-h-screen flex flex-col md:flex-row items-center justify-center md:justify-between px-4 sm:px-8 md:px-16 py-16 bg-black text-white overflow-hidden">
 
       {/* Top Left Signature */}
@@ -54,5 +55,6 @@ export default function Hero() {
         />
       </div>
     </div>
+    </section>
   );
 }

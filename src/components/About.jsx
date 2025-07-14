@@ -1,6 +1,10 @@
 export default function About() {
   return (
-    <section className="w-full min-h-screen bg-black text-white flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 lg:px-20 py-16 sm:py-20">
+      
+    <section 
+      id="about"
+
+     className="w-full min-h-screen bg-black text-white flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 lg:px-20 py-16 sm:py-20">
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-center tracking-tight transition-transform duration-300 hover:scale-105 origin-left hover:text-teal-400">
         About <span className="text-teal-400">Me</span>
       </h2>

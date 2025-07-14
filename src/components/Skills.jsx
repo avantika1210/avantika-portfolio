@@ -15,7 +15,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="w-full min-h-screen bg-gradient-to-br from-black via-zinc-900 to-black text-white flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 lg:px-20 py-16 sm:py-20">
+    <section id="skills" className="w-full min-h-screen bg-gradient-to-br from-black via-zinc-900 to-black text-white flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 lg:px-20 py-16 sm:py-20">
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 tracking-tight">
         My <span className="text-teal-400">Skills</span>
       </h2>
