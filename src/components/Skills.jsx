@@ -9,15 +9,14 @@ export default function Skills() {
     "Express.js",
     "MongoDB",
     "C++",
-    
     "Git & GitHub",
     "Canva",
     "Core CS Concepts"
   ];
 
   return (
-    <section className="w-screen h-screen bg-gradient-to-br from-black via-zinc-900 to-black text-white flex flex-col items-center justify-center px-6 py-10">
-      <h2 className="text-6xl font-bold text-center mb-20 tracking-tight">
+    <section className="w-full min-h-screen bg-gradient-to-br from-black via-zinc-900 to-black text-white flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 lg:px-20 py-16 sm:py-20">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 tracking-tight">
         My <span className="text-teal-400">Skills</span>
       </h2>
 
@@ -27,7 +26,7 @@ export default function Skills() {
             key={index}
             className="backdrop-blur-md bg-white/5 border border-white/10 hover:border-teal-400 text-center py-6 px-4 rounded-2xl shadow-md hover:shadow-teal-500/30 transition-all duration-300"
           >
-            <span className="text-lg font-semibold tracking-wide text-gray-200 hover:text-teal-400">
+            <span className="text-base sm:text-lg font-semibold tracking-wide text-gray-200 hover:text-teal-400">
               {skill}
             </span>
           </div>

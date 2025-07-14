@@ -5,12 +5,11 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-gray-900 text-white flex items-center justify-center px-4 sm:px-10 py-20 font-poppins"
+      className="w-full min-h-screen bg-gray-900 text-white flex items-center justify-center px-4 sm:px-6 md:px-10 lg:px-20 py-16 sm:py-20"
     >
-      <div className="w-full max-w-5xl text-center">
-
+      <div className="w-full max-w-4xl text-center">
         {/* Heading with hover effect */}
-        <h2 className="text-4xl sm:text-5xl font-bold mb-20 group inline-block transition duration-300">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 group inline-block transition duration-300">
           <span className="drop-shadow-md group-hover:text-teal-400 transition duration-300">
             Contact
           </span>{" "}
@@ -19,7 +18,7 @@ export default function Contact() {
           </span>
         </h2>
 
-        <p className="text-gray-300 text-lg sm:text-xl mb-8 max-w-3xl mx-auto">
+        <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
           Have a project in mind or just want to connect? I’m always open to
           discussions, collaborations, or freelance opportunities!
         </p>
@@ -28,7 +27,7 @@ export default function Contact() {
         <div className="mb-6">
           <a
             href="mailto:avantika2004pandey@gmail.com"
-            className="inline-block bg-teal-500 hover:bg-teal-400 text-black font-semibold px-8 py-3 rounded-full text-lg transition duration-300"
+            className="inline-block bg-teal-500 hover:bg-teal-400 text-black font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-full text-base sm:text-lg transition duration-300"
           >
             Say Hello ✉️
           </a>
@@ -39,14 +38,14 @@ export default function Contact() {
           <a
             href="/Avantika_Resume.pdf"
             download
-            className="inline-block bg-gray-800 hover:bg-teal-500 text-white px-8 py-3 rounded-full text-lg transition duration-300"
+            className="inline-block bg-gray-800 hover:bg-teal-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-base sm:text-lg transition duration-300"
           >
             Download Resume 📄
           </a>
         </div>
 
         {/* Social Icons */}
-        <div className="flex justify-center space-x-8 text-3xl mb-10">
+        <div className="flex justify-center space-x-6 sm:space-x-8 text-2xl sm:text-3xl mb-10">
           <a
             href="mailto:avantika2004pandey@gmail.com"
             className="hover:text-teal-400 transition"
@@ -75,7 +74,7 @@ export default function Contact() {
         </div>
 
         {/* Footer */}
-        <footer className="text-sm text-gray-500">
+        <footer className="text-xs sm:text-sm text-gray-500">
           © {new Date().getFullYear()} Avantika Pandey. All rights reserved.
         </footer>
       </div>

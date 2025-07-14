@@ -15,7 +15,7 @@ export default function Projects() {
       image: "/projects/ochi.jpeg",
     },
     {
-      title: " College Complaint Portal",
+      title: "College Complaint Portal",
       description:
         "A centralized platform for students of my college to lodge and track complaints efficiently.",
       tech: "HTML, CSS, JavaScript",
@@ -31,8 +31,8 @@ export default function Projects() {
   ];
 
   return (
-    <section className="w-screen h-screen bg-black text-white flex flex-col justify-center items-center px-6 py-10">
-      <h2 className="text-7xl font-bold text-center mb-40 tracking-tight hover:text-teal-400 transition duration-300">
+    <section className="w-full min-h-screen bg-black text-white flex flex-col justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 py-16 sm:py-20">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16 tracking-tight hover:text-teal-400 transition duration-300">
         My <span className="text-teal-400">Projects</span>
       </h2>
 
@@ -42,17 +42,17 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="min-w-[300px] sm:min-w-[350px] max-w-[400px] bg-zinc-900 rounded-2xl overflow-hidden shadow-lg transition duration-300 ease-in-out 
+              className="min-w-[260px] sm:min-w-[300px] md:min-w-[350px] max-w-[400px] bg-zinc-900 rounded-2xl overflow-hidden shadow-lg transition duration-300 ease-in-out 
                 blur-sm opacity-40 group-hover:blur-sm group-hover:opacity-60 
                 hover:blur-none hover:opacity-100 hover:scale-105"
             >
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-[200px] object-cover"
+                className="w-full h-[180px] sm:h-[200px] object-cover"
               />
               <div className="p-4">
-                <h3 className="text-xl font-bold text-teal-400 mb-2">
+                <h3 className="text-lg sm:text-xl font-bold text-teal-400 mb-2">
                   {project.title}
                 </h3>
                 <p className="text-gray-300 mb-2 text-sm">
