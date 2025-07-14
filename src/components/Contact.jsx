@@ -36,7 +36,7 @@ export default function Contact() {
         {/* Resume Download */}
         <div className="mb-10">
           <a
-            href="/Avantika_Resume.pdf"
+            href="/naii.pdf"
             download
             className="inline-block bg-gray-800 hover:bg-teal-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-base sm:text-lg transition duration-300"
           >

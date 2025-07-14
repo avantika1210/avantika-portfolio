@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export default function Projects() {
+  const [activeIndex, setActiveIndex] = useState(null);
+
   const projects = [
     {
       title: "AstraFem",
@@ -31,20 +35,28 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="w-full min-h-screen bg-black text-white flex flex-col justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 py-16 sm:py-20">
+    <section
+      id="projects"
+      className="w-full min-h-screen bg-black text-white flex flex-col justify-center items-center px-4 sm:px-6 md:px-10 lg:px-20 py-16 sm:py-20"
+    >
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16 tracking-tight hover:text-teal-400 transition duration-300">
         My <span className="text-teal-400">Projects</span>
       </h2>
 
-      {/* Scrollable Card Container with hover group */}
-      <div className="w-full overflow-x-auto scrollbar-hide">
-        <div className="flex gap-6 px-2 group">
+      
+<div className="w-full overflow-x-auto scrollbar-hide">
+  <div className="flex gap-6 px-2 group">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="min-w-[260px] sm:min-w-[300px] md:min-w-[350px] max-w-[400px] bg-zinc-900 rounded-2xl overflow-hidden shadow-lg transition duration-300 ease-in-out 
-                blur-sm opacity-40 group-hover:blur-sm group-hover:opacity-60 
-                hover:blur-none hover:opacity-100 hover:scale-105"
+              onClick={() => setActiveIndex(index)}
+              className={`min-w-[260px] sm:min-w-[300px] md:min-w-[350px] max-w-[400px] bg-zinc-900 rounded-2xl overflow-hidden shadow-lg transition duration-300 ease-in-out cursor-pointer
+              
+              ${
+                activeIndex === index
+                  ? "blur-none opacity-100 scale-100"
+                  : "sm:blur-sm sm:opacity-40 sm:group-hover:blur-sm sm:group-hover:opacity-60 sm:hover:blur-none sm:hover:opacity-100 sm:hover:scale-105"
+              }`}
             >
               <img
                 src={project.image}
